@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+     <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="j5ZmpRp6-ZeLuTr-M8DbzuULJBChS9HBV_7bDVQt9u4" />
+    <title>MercuryAR</title>
+
+    <link rel="icon" type="image/x-icon" href="./icons/logo031611.svg">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/swiper-bundle.min.css">
+    <style type="text/css">
+    	.nav .active{
+    		background-color: rgb(55, 155, 255)
+            ;
+    		color: #fff;
+    	}
+    </style>
+    <style type="text/css">
+        body{
+            background-color: rgb(17, 19, 26);
+        }
+        </style>
+    <!-- Scripting -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/df18b2a205.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2REWPBLGYY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+       gtag('config', 'G-2REWPBLGYY');
+    </script>
+	
+
+    
+    <!--自定义配置文件-->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        opred: '#ED1D24',
+                        opred2: '#FB302F',
+                        opgrey2: "#A6A7A9",
+                        opgrey3: "#F7F7F7",
+                        opgrey4:"#BFBFBF",
+                        opdark: "#1E1E1E",
+                        opblue: '#379BFF',
+                        
+                    }
+                }
+            }
+        }
+    </script>
+    <!--修改背景-->
+    <style>
+        .High Fidelity{/*High Fidelity的背景色*/
+            background-color: rgba(0,0,0,0.2);
+            width: 100vw;
+            position: relative;
+        }
+        #Background2{/*problem的背景阴影悬停*/
+            box-shadow: rgba(216, 212, 224, 0.4) 0px 20px 30px;
+            border-radius:10px;
+        }
+        #Theory2{/*problem的背景阴影悬停*/
+            box-shadow: rgba(209, 205, 216, 0.4) 0px 20px 30px;
+            border-radius:10px;
+        }
+        #UR2{/*problem的背景阴影悬停*/
+            box-shadow: rgba(209, 205, 216, 0.4) 0px 20px 30px;
+            border-radius:10px;
+        }
+        #IO2{/*problem的背景阴影悬停*/
+            box-shadow: rgba(209, 205, 216, 0.4) 0px 20px 30px;
+            border-radius:10px;
+        }
+    </style>
+</head>
+
+<body class="bg-opmainpu" id="body">
+    <div class="custom__cursor__outer"></div>
+    <div class="custom__cursor__inner"></div>
+
+    <!--导航-->
+    <nav class="py-4 px-28 sticky top-0 backdrop-blur-lg bg-black/20 showout">
+        <div class="flex justify-between px-12">
+            <div>
+                <a href="index.html" class="flex logo py-2">
+                    <img src="./icons/logo11.svg" alt="" draggable="false" class="w-42 max-w-full">
+                </a>
+            </div>
+            <div class="space-x-1">
+                <a href="index.html" class="text-white caption py-4 px-2 transition duration-500 ease-in-out hover:text-opred"><span>Work</span></a>
+                <a href="about.html" class="text-white caption py-4 px-2 transition duration-500 ease-in-out hover:text-opred"><span>About</span></a>
+            </div>
+        </div>
+    </nav>
+
+
+        <!--正文-->
+        <section class="px-48">
+            <div class="container px-12 mx-auto">
+
+                <!--分割线-->
+                <div class="divide-y divide-white container my-1" id="Overview">
+                    <div><p class="invisible">&nbsp</p></div>
+                </div>
+                <!--Main-->
+                <div class="flex justify-between text-left my-10">
+                    <div class="flex w-1/2">
+                        <p class="text-3xl text-white pfsemibold">Mercury AR</p>
+                    </div>
+                    <div class="flex w-1/2">
+                        <p class="text-xl text-white pfregular leading-relaxed">
+                            A design intervention to help aphasia patients overcome social isolation, build connections, and improve language skills.
+                            <br><span class="text-sm text-opgrey2 pfregular mb-2 underline">AR/XR</span>
+                            <span class="text-sm text-opgrey2 pfregular mb-2"> · </span>
+                            <span class="text-sm text-opgrey2 pfregular mb-2 underline">Machine Learning</span>
+                            <span class="text-sm text-opgrey2 pfregular mb-2"> · </span>
+                            <span class="text-sm text-opgrey2 pfregular mb-2 underline">Game Design</span>
+                        </p> 
+                    </div>
+                </div>
+                <hr>
+                <div class="row pt-5">
+                    <div class="col-md-10">
+                        <div class="col-12 px-3 py-4">
+                            <div class="row d-flex align-items-center" id="contentFather">
+                                <div class="col-12 text-center pb-4">
+                                    <img class="img-fluid max-width: 100%; height: auto;" src="./images/MAR/28.png">
+                                </div>
+                                <div class="flex justify-between text-left my-20">
+                                    <div class="flex w-2/3">
+                                        <p><span class="text-xl text-white pfsemibold">&#x270D;Overview</span>
+                                            <br><br><span class="text-m text-white pfregular">
+                                                Mercury AR aims to help aphasia patients overcome social isolation through gamification, treating patients as novices and volunteers as NPCs in a novice village, thereby establishing social connections and providing a language training environment.
+                                                <br>Furthermore, Mercury AR enables volunteers to record and upload conversations to the doctor’s end, assisting the doctor in making a diagnosis and developing a recovery plan, thereby relieving pressure on healthcare funding and creating a win-win situation.
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="flex w-1/4">
+                                        <p class="pfregular leading-relaxed">
+                                        <ul class="my-list">
+                                            <span class="text-opgrey2 text-sm pfregular">Timeline:</span>
+                                            <br><span class="text-m text-white pfregular">June,2023-Oct,2023<br>8 weeks</span>
+                                            <br><br><span class="text-opgrey2 text-sm pfregular">My Role:</span>
+                                            <br><span class="text-m text-white pfregular">Independent Project</span>
+                                            <br><br><span class="text-opgrey2 text-sm pfregular">Tools:</span>
+                                            <br><span class="text-m text-white pfregular">Python、Unity、Blender、Figma</span>
+                                        </ul>
+                                        </p>
+                                    </div>
+                                </div>
+
+                <!--分割线-->
+                <div class="divide-y divide-gray-400 container my-12" id="Background">
+                    <div><p class="invisible">&nbsp</p></div>
+                    <div><p class="invisible">&nbsp</p></div>
+                </div>
+                <!--Desktop Research-->
+                <div class="flex justify-between text-left my-10">
+                    <div class="flex w-1/3">
+                        <p class="text-2xl text-opblue pfsemibold">📈Background</p>
+                    </div>
+                    <div class="flex w-2/3">
+                        <p class="text-m pfregular leading-relaxed">
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-24 text-center">
+                    <a href="./images/MAR/dr.png" target="_blank">
+                      <img class="img-fluid max-width: 100%; height: auto; zoom-on-hover" src="./images/MAR/dr.png">
+                    </a>
+                </div>
+
+                <!--分割线-->
+                <div class="divide-y divide-gray-400 container my-12" id="Desktop Research">
+                    <div><p class="invisible">&nbsp</p></div>
+                    <div><p class="invisible">&nbsp</p></div>
+                </div>
+                <!--Desktop Research-->
+                <div class="flex justify-between text-left my-10">
+                    <div class="flex w-1/3">
+                        <p class="text-2xl text-opblue pfsemibold">📖Desktop Research</p>
+                    </div>
+                    <div class="flex w-2/3">
+                        <p class="text-m pfregular leading-relaxed">
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-24 text-center">
+                    <div><img class="w-full" src="./images/MAR/ds.png"></div>
+                </div>
+
+                <!--分割线-->
+                <div class="divide-y divide-gray-400 container my-12" id="User Research">
+                    <div><p class="invisible">&nbsp</p></div>
+                    <div><p class="invisible">&nbsp</p></div>
+                </div>
+                <!--Desktop Research-->
+                <div class="flex justify-between text-left my-10">
+                    <div class="flex w-1/3">
+                        <p class="text-2xl text-opblue pfsemibold">🔍User Research</p>
+                    </div>
+                    <div class="flex w-2/3">
+                        <p class="text-m pfregular leading-relaxed">
+                        </p>
+                    </div>
+                </div>
+                <div class="col-24 text-center">
+                    <div><img class="w-full" src="./images/MAR/ur.png"></div>
+                </div>
+
+                <!--分割线-->
+                <div class="divide-y divide-gray-400 container my-12" id="Design Strategy">
+                    <div><p class="invisible">&nbsp</p></div>
+                    <div><p class="invisible">&nbsp</p></div>
+                </div>
+                <!--Desktop Research-->
+                <div class="flex justify-between text-left my-10">
+                    <div class="flex w-1/3">
+                        <p class="text-2xl text-opblue pfsemibold">🎯Design Strategy</p>
+                    </div>
+                    <div class="flex w-2/3">
+                        <p class="text-m pfregular leading-relaxed">
+                        </p>
+                    </div>
+                </div>
+                <div class="col-24 text-center">
+                    <div><img class="w-full" src="./images/MAR/ur.png"></div>
+                </div>
+
+                <!--分割线-->
+                <div class="divide-y divide-gray-400 container my-12" id="Design Concept">
+                    <div><p class="invisible">&nbsp</p></div>
+                    <div><p class="invisible">&nbsp</p></div>
+                </div>
+                <!--Desktop Research-->
+                <div class="flex justify-between text-left my-10">
+                    <div class="flex w-1/3">
+                        <p class="text-2xl text-opblue pfsemibold">🎨Design Concept</p>
+                    </div>
+                    <div class="flex w-2/3">
+                        <p class="text-m pfregular leading-relaxed">
+                        </p>
+                    </div>
+                </div>
+                <div class="col-24 text-center">
+                    <div><img class="w-full" src="./images/MAR/dc.png"></div>
+                </div>
+
+                <!--分割线-->
+                <div class="divide-y divide-gray-400 container my-12" id="Low-Fi Process">
+                    <div><p class="invisible">&nbsp</p></div>
+                    <div><p class="invisible">&nbsp</p></div>
+                </div>
+                <!--Desktop Research-->
+                <div class="flex justify-between text-left my-10">
+                    <div class="flex w-1/3">
+                        <p class="text-2xl text-opblue pfsemibold">Low-Fi Process</p>
+                    </div>
+                    <div class="flex w-2/3">
+                        <p class="text-m pfregular leading-relaxed">
+                        </p>
+                    </div>
+                </div>
+                <div class="col-24 text-center">
+                    <div><img class="w-full" src="./images/MAR/lf.png"></div>
+                </div>
+
+                <!--分割线-->
+                <div class="divide-y divide-gray-400 container my-12" id="Service System">
+                    <div><p class="invisible">&nbsp</p></div>
+                    <div><p class="invisible">&nbsp</p></div>
+                </div>
+                <!--Desktop Research-->
+                <div class="flex justify-between text-left my-10">
+                    <div class="flex w-1/3">
+                        <p class="text-2xl text-opblue pfsemibold">🔗Service System</p>
+                    </div>
+                    <div class="flex w-2/3">
+                        <p class="text-m pfregular leading-relaxed">
+                        </p>
+                    </div>
+                </div>
+                <div class="col-24 text-center">
+                    <div><img class="w-full" src="./images/MAR/ss.png"></div>
+                </div>
+
+                <!--分割线-->
+                <div class="divide-y divide-gray-400 container my-12" id="Service Blueprint">
+                    <div><p class="invisible">&nbsp</p></div>
+                    <div><p class="invisible">&nbsp</p></div>
+                </div>
+                <!--Desktop Research-->
+                <div class="flex justify-between text-left my-10">
+                    <div class="flex w-1/3">
+                        <p class="text-2xl text-opblue pfsemibold">📋Service Blueprint</p>
+                    </div>
+                    <div class="flex w-2/3">
+                        <p class="text-m pfregular leading-relaxed">
+                        </p>
+                    </div>
+                </div>
+                <div class="col-24 text-center">
+                    <div><img class="w-full" src="./images/MAR/sb.png"></div>
+                </div>
+
+                <!--分割线-->
+                <div class="divide-y divide-gray-400 container my-12" id="AR Prototype">
+                    <div><p class="invisible">&nbsp</p></div>
+                    <div><p class="invisible">&nbsp</p></div>
+                </div>
+                <!--Desktop Research-->
+                <div class="flex justify-between text-left my-10">
+                    <div class="flex w-1/3">
+                        <p class="text-2xl text-opblue pfsemibold">📡AR Prototype</p>
+                    </div>
+                    <div class="flex w-2/3">
+                        <p class="text-m pfregular leading-relaxed">
+                        </p>
+                    </div>
+                </div>
+                <div class="col-24 text-center">
+                    <div><img class="w-full" src="./images/MAR/ap.png"></div>
+                </div>
+
+                <!--分割线-->
+                <div class="divide-y divide-gray-400 container my-12" id="User Testing">
+                    <div><p class="invisible">&nbsp</p></div>
+                    <div><p class="invisible">&nbsp</p></div>
+                </div>
+                <!--Desktop Research-->
+                <div class="flex justify-between text-left my-10">
+                    <div class="flex w-1/3">
+                        <p class="text-2xl text-opblue pfsemibold">💾User Testing</p>
+                    </div>
+                    <div class="flex w-2/3">
+                        <p class="text-m pfregular leading-relaxed">
+                        </p>
+                    </div>
+                </div>
+                <div class="col-24 text-center">
+                    <div><img class="w-full" src="./images/MAR/ut.png"></div>
+                </div>
+
+                <!--分割线-->
+                <div class="divide-y divide-gray-400 container my-12" id="Final Design">
+                    <div><p class="invisible">&nbsp</p></div>
+                    <div><p class="invisible">&nbsp</p></div>
+                </div>
+                <!--Desktop Research-->
+                <div class="flex justify-between text-left my-10">
+                    <div class="flex w-1/3">
+                        <p class="text-2xl text-opblue pfsemibold">Final Design</p>
+                    </div>
+                    <div class="flex w-2/3">
+                        <p class="text-m pfregular leading-relaxed">
+                        </p>
+                    </div>
+                </div>
+                <div class="col-24 text-center">
+                    <div><img class="w-full" src="./images/MAR/ui.png"></div>
+                </div>
+                                  
+                <!--分割线-->
+                <div class="divide-y divide-white container my-20" id="Tes">
+                    <div><p class="invisible">&nbsp</p></div>
+                </div>  
+        
+
+                    
+               
+
+            </div>
+        </section>
+
+        <a href="#" id="uparrow"><i class="fa-solid fa-angle-up"></i></a>
+
+        <script src="./script/script.js"></script>
+        <script src="./script/swiper-bundle.min.js"></script>
+        <script>        
+            var mySwiper = new Swiper ('.swiper', {
+              loop: true, // 循环模式选项
+              
+              // 如果需要分页器
+              pagination: {
+                el: '.swiper-pagination',
+              },
+              
+              // 如果需要前进后退按钮
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+              
+              // 如果需要滚动条
+              scrollbar: {
+                el: '.swiper-scrollbar',
+              },
+            })        
+        </script>
+    </div>
+
+
+    <nav class="nav" Style="padding-left: 20px">
+        <div class="shadow-Slate-50 fixed pt-2 pb-2 pr-2 rlist flex flex-col w-auto divide-y divide-gray-200 backdrop-blur-md bg-black/20 text-left"
+            Style="padding-left: 10px; top:50%; transform:translateY(-47%)">
+            <div class="p-1 text-opgrey2 pfregular text-base flex-auto transition duration-500 ease-in-out hover:text-white hover:bg-opmainpurple hover:underline " ><a 
+                    href="#Overview">Overview</a></div>
+            <div class="p-1 text-opgrey2 pfregular text-base flex-auto transition duration-500 ease-in-out hover:text-white hover:bg-opmainpurple hover:underline "><a
+                    href="#Background">Background</a></div>
+            <div class="p-1 text-opgrey2 pfregular text-base flex-auto transition duration-500 ease-in-out hover:text-white hover:bg-opmainpurple hover:underline "><a
+                    href="#Desktop Research">Desktop Research</a></div>        
+            <div class="p-1 text-opgrey2 pfregular text-base flex-auto transition duration-500 ease-in-out hover:text-white hover:bg-opmainpurple hover:underline "><a
+                    href="#User Research">User Research</a></div>
+            <div class="p-1 text-opgrey2 pfregular text-base flex-auto transition duration-500 ease-in-out hover:text-white hover:bg-opmainpurple hover:underline "><a
+                    href="#Design Strategy">Design Strategy</a></div>
+            <div class="p-1 text-opgrey2 pfregular text-base flex-auto transition duration-500 ease-in-out hover:text-white hover:bg-opmainpurple hover:underline "><a
+                    href="#Design Concept">Design Concept</a></div>
+            <div class="p-1 text-opgrey2 pfregular text-base flex-auto transition duration-500 ease-in-out hover:text-white hover:bg-opmainpurple hover:underline "><a
+                    href="#Low-Fi Process">Low-Fi Process</a></div>
+            <div class="p-1 text-opgrey2 pfregular text-base flex-auto transition duration-500 ease-in-out hover:text-white hover:bg-opmainpurple hover:underline "><a
+                    href="#Service System">Service System</a></div>
+            <div class="p-1 text-opgrey2 pfregular text-base flex-auto transition duration-500 ease-in-out hover:text-white hover:bg-opmainpurple hover:underline "><a
+                    href="#Service Blueprint">Service Blueprint</a></div>
+            <div class="p-1 text-opgrey2 pfregular text-base flex-auto transition duration-500 ease-in-out hover:text-white hover:bg-opmainpurple hover:underline "><a
+                    href="#AR Prototype">AR Prototype</a></div>
+            <div class="p-1 text-opgrey2 pfregular text-base flex-auto transition duration-500 ease-in-out hover:text-white hover:bg-opmainpurple hover:underline "><a
+                    href="#User Testing">User Testing</a></div>
+            <div class="p-1 text-opgrey2 pfregular text-base flex-auto transition duration-500 ease-in-out hover:text-white hover:bg-opmainpurple hover:underline "><a
+                    href="#Final Design">Final Design</a></div>
+
+        </div>
+    </nav>
+
+    <!--footer-->
+    <footer class="body-font bg-opdark py-5 px-28" id="footer">
+        <div class="container px-28 py-8 flex flex-col">
+            <span class="text-3xl pfsemibold text-white sm:ml-4 sm:py-2 sm:mt-0 mt-4">
+                <span class="duration-500 ease-in-out leading-relaxed hover:text-opgrey4">
+                    <a href="zly2050957835@gmail.com">Let's chat!☕</a>
+                </span><br>View more 
+                <span class="duration-500 ease-in-out text-opred2 leading-relaxed hover:text-white">
+                    <a href="./index.html">works</a></span>✨
+            </span><br>
+            <span class="inline-flex sm:flex-row justify-center sm:justify-start">
+                <a class="footer-logo flex title-font font-medium items-center md:justify-start justify-center text-gray-800"
+                    href="./index.html">
+                <span class="ml-3 text-xl text-white duration-500 ease-in-out leading-relaxed hover:text-opgrey4">Louisa Zhang
+                </span></a>
+                <p class="text-sm text-gray-200 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+                    ©2024 Made with caffeine —
+                    <a href="mailto: luoyizhang22@gmail.com" class="text-gray-200 ml-1 duration-500 ease-in-out leading-relaxed hover:text-opgrey4" rel="noopener noreferrer"
+                    target="_blank">luoyizhang22@gmail.com</a>
+                </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 px-8 justify-center sm:justify-start">
+                <ul class="flex items-center">
+                    <a class="ml-5 text-white" href="https://github.com/" target="_blank">
+                        <span class=" text-xl"><i class="fa-brands fa-github"></i></span>
+                    </a>
+                    <a class="ml-5 text-white" href="https://www.linkedin.com/in/luoyi-zhang-154805301/" target="_blank">
+                        <span class="text-xl"><i class="fa-brands fa-linkedin-in"></i> </span>
+                    </a>
+                </ul>
+            </span>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+    	$(document).ready(function() {
+
+    	var w1 = $('.nav').width()
+
+    	$('#js-width').css({'width': screen.width-25, 'margin-left': -135});
+
+	    var $sections = $('.container'); //选取容器
+	    var inScreen = 100; //进入屏幕100px后高亮
+	    var outScreen = 100; //距离滚出屏幕还有200px时取消高亮
+
+	    function scrollactive() {
+	        $sections.each(function(idx, $sec) {
+	        	console.log($sec)
+	            var $sec = $($sec);
+	            var wHeight = $(window).height(); //获取窗口的高度
+	            var sHeight = $sec.height(); //获取元素的高度
+	            var wScroll = $(window).scrollTop(); //获取窗口距离网页顶部的高度
+	            var sScroll = $sec.offset().top; //获取元素距离顶部的高度
+	            var wTop = wScroll + wHeight - inScreen; //窗口底部距离网页顶端的高度
+	            var sTop = sScroll + sHeight - outScreen; //元素底部距离网页顶端的高度
+
+	            //给当前所有在浏览器窗口内显示的菜单及其容器添加高亮样式
+	            // if (sScroll < wTop && sTop > wScroll) { //判断元素顶部、低部是否在当前窗口中
+	            //     $sec.addClass('active'); //给容器添加高亮样式
+	            //     var idn = $sec.attr('id'); //获取容器的id值
+	            //     $('.nav a[href=' + '"#' + idn + '"]').parent().addClass('active'); //给对应的菜单添加高亮样式
+	            // } else {
+	            //     $sec.removeClass('active');
+	            //     var idr = $sec.attr('id');
+	            //     $('.nav a[href=' + '"#' + idr + '"]').parent().removeClass('active');
+	            // };
+
+	            //只高亮一个菜单
+	            			var w;
+	            			if(sHeight < wHeight){
+	            				w = wHeight-sHeight; //屏幕与元素间的高度差
+	            			}else{
+	            				w = 1; //防止滚动条默认偏移
+	            			};
+	            			if(sScroll-w < wScroll) {  //判断元素顶部是否在窗口中
+	            				var idn = $sec.attr('id');
+	            				$('.nav .p-1').removeClass('active');
+	            				$('.nav a[href='+'"#' + idn + '"]').parent().addClass('active');
+	            			};
+
+	        });
+	    };
+	    scrollactive();
+
+	    //滚动浏览器触发事件
+	    $(window).scroll(function() {
+	        scrollactive();
+	    });
+
+	    //锚点平滑滚动
+	    $('.nav a').click(function() {
+	        $('html, body').animate({
+	            scrollTop: ($($(this).attr('href')).offset().top - 30) + 'px'
+	        }, {
+	            duration: 400,
+	            easing: 'swing'
+	        });
+	        return false;
+	    });
+
+	});
+	</script>
+</body>
+
+</html>
