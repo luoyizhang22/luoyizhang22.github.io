@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="j5ZmpRp6-ZeLuTr-M8DbzuULJBChS9HBV_7bDVQt9u4" />
+    <title>MELORI</title>
+
+    <link rel="icon" type="image/x-icon" href="./icons/logo031611.svg">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/swiper-bundle.min.css">
+    <style type="text/css">
+    	.nav .active{
+    		background-color: #222222;
+    		color: #fff;
+    	}
+    </style>
+    <style type="text/css">
+        body{
+            background-color: #F6F6F6;
+        }
+        </style>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="custom.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo-text.svg">
+
+
+    <!-- Scripting -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/df18b2a205.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJW9LDM6YQ"></script>
+    <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+            
+          gtag('config', 'G-EJW9LDM6YQ');
+     </script>
+
+    <script src="https://www.w3counter.com/tracker.js?id=151508"></script>
+
+    <!--自定义配置文件-->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        opred: '#ED1D24',
+                        opred2: '#FB302F',
+                        opred3: '#FF5439',
+                        opyellow: '#ffbb00',
+                        oplightpink: '#F6F6F6',
+                        opmainpurple: '#151515',
+                        opgrey: "#747474",
+                        opgrey2: "#525252",
+                        opgrey3: "#F7F7F7",
+                        opgrey4:"#BFBFBF",
+                        opdark: "#1E1E1E",
+                        oplightblue: '#0089FD',
+                        oplightgreen: '#CFF2CC',
+                        opmaingreen: '#31C252',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!--修改背景-->
+    <style>
+        .High Fidelity{/*High Fidelity的背景色*/
+            background-color: rgba(0,0,0,0.2);
+            width: 100vw;
+            position: relative;
+        }
+        #Background2{/*problem的背景阴影悬停*/
+            box-shadow: #cecece66 0px 20px 30px;
+            border-radius:10px;
+        }
+    </style>
+</head>
+
+<body class="bg-opmainpu" id="body">
+    <div class="custom__cursor__outer"></div>
+    <div class="custom__cursor__inner"></div>
+
+    <!--导航-->
+    <nav class="py-4 px-28 sticky top-0 backdrop-blur-lg bg-white/50 showout">
+        <div class="flex justify-between px-12">
+            <div>
+                <a href="index.html" class="flex logo py-2">
+                    <img src="./icons/logo031622.svg" alt="" draggable="false" class="w-42 max-w-full">
+                </a>
+            </div>
+            <div class="space-x-1">
+                <a href="index.html" class="caption py-4 px-2 transition duration-500 ease-in-out hover:text-opred"><span>Work</span></a>
+                <a href="about.html" class="caption py-4 px-2 transition duration-500 ease-in-out hover:text-opred"><span>About</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <!--正文1-->
+    <section class="px-52">
+        <div class="container px-12 mx-auto">
+            <!--分割线-->
+            <div class="divide-y divide-white container my-1">
+                <div><p class="invisible">&nbsp</p></div>
+            </div>
+            <!--Main-->
+            <div class="flex justify-between text-left my-10">
+                <div class="flex w-1/2">
+                    <p class="text-3xl pfsemibold">MELORI-Music Product System</p>
+                </div>
+                <div class="flex w-1/2">
+                    <p class="text-xl pfregular leading-relaxed">
+                        A design intervention to alleviate university students' time anxiety.
+                        <br><span class="text-sm text-opgrey2 pfregular mb-2 underline">Cognitive Psychology</span>
+                        <span class="text-sm text-opgrey2 pfregular mb-2"> · </span>
+                        <span class="text-sm text-opgrey2 pfregular mb-2 underline">Media Ecology</span>
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <!--项目介绍-->
+            <div class="row pt-5">
+                <div class="col-md-10">
+                    <div class="col-12 px-3 py-4">
+                        <div class="row d-flex align-items-center" id="contentFather">
+                            <div class="col-12 text-center pb-4">
+                                <img class="img-fluid max-width: 100%; height: auto;" src="./images/Cover/TAco.jpg">
+                            </div>
+
+                            <div class="flex justify-between text-left my-8">
+                                <!--分组-->
+                                <div class="flex w-1/3">
+                                    <p class="pfregular leading-relaxed">
+                                    <ul class="my-list">
+                                        <span class="text-xl pfsemibold">Timeline:</span>
+                                        <br><span class="text-xm pfregular">Jan, 2023-Mar,2023</span>
+                                    </ul>
+                                    </p>
+                                </div>
+                                <!--分组-->
+                                <div class="flex w-1/3">
+                                    <p class="pfregular leading-relaxed">
+                                    <ul class="my-list">
+                                        <span class="text-xl pfsemibold">My Role:</span>
+                                        <br><span class="text-xm pfregular">Individual Project</span>
+                                    </ul>
+                                    </p>
+                                </div>
+                                <!--分组-->
+                                <div class="flex w-1/3">
+                                    <p class="pfregular leading-relaxed">
+                                    <ul class="my-list">
+                                        <span class="text-xl pfsemibold">Tools:</span>
+                                        <br><span class="text-xm pfregular">Arduino、Figma、Rhino、Cinema 4D</span>
+                                    </ul>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!--分割线-->
+                            <div class="divide-y divide-gray-400 container" id="Overview">
+                                <div><p class="invisible">&nbsp</p></div>
+                                <div><p class="invisible">&nbsp</p></div>
+                            </div> 
+                            <!--Problem Modeling-->
+                            <div class="bg-oplightpink">
+                                <div class="flex justify-between text-left my-12">
+                                    <div class="flex w-full">
+                                        <p><span class="text-2xl pfsemibold">🎵Overview</span>
+                                            <span class="text-lg pfregular leading-relaxed">
+                                                <br>We are living in an era of acceleration. Speed has made people more efficient, but has also introduced a sense of time anxiety and a shift in our conception of time and space. 
+                                                College students, in particular, face substantial pressure from excessive time demands and anxiety. This anxiety paradoxically reduces their learning efficiency and sense of well-being, turning them into servants of time. To address the issue of time anxiety among college students, 
+                                                I developed three main strategies and a product system.
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--图+文-->
+                            <div class="flex justify-between text-left my-4">
+                                <div class="flex"><img class="w-full"  src="./images/TA/SP1.png"></div>
+                            </div>
+                            <div class="flex justify-between text-left">
+                                <div class="col-24 text-center">
+                                    <video controls>
+                                    <source src="./images/TA/WL.mp4" type="video/mp4"></source>
+                                    </video>
+                                    <br><br>
+                                </div>
+                            </div>
+                            <!--图+文-->
+                            <div class="flex justify-between text-left my-4">
+                                <div class="flex"><img class="w-full"  src="./images/TA/SP2.png"></div>
+                            </div>
+                            <br><br>
+                            <!--分割线-->
+                            <div class="divide-y divide-gray-400 container" id="Background">
+                                <div><p class="invisible">&nbsp</p></div>
+                                <div><p class="invisible">&nbsp</p></div>
+                            </div> 
+                            <!--Background-->
+                            <div class="bg-oplightpink" >
+                                <div class="flex justify-between text-left my-10">
+                                    <div class="flex w-full">
+                                        <p>
+                                            <span class="text-2xl pfsemibold"><br>📈Background</span>
+                                            <span class="text-xl pfsemibold text-opmaingreen"><br>Problem context</span>
+                                            <span class="text-lg pfregular leading-relaxed">
+                                                <br><br>With the increasing competition in society and the accelerating pace of life, "racing" has gradually become a symbolic cultural landscape of modern Eastern society. 
+                                                It brings about a sense of anxiety towards time among modern people, a feeling that is rapidly spreading across society. 
+                                                Queries like <span class="bg-oplightgreen">"Where has all the time gone?"</span> and <span class="bg-oplightgreen">"There's not enough time"</span> are becoming more prevalent in everyday conversations. 
+                                                The panic over the passage of time, the worry about not achieving set goals within a given timeframe, and complaints about the relentless busyness of life are diminishing modern people's happiness. 
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--图+文-->
+                                <div class="flex justify-between text-left">
+                                    <div class="flex"><img class="w-full"  src="./images/TA/Ba1.png"></div>
+                                </div>
+                                <!--图+文-->
+                                <div class="flex justify-between text-left">
+                                    <div class="flex w-full">
+                                        <p class="text-xl pfsemibold text-opmaingreen"><br>Professional evidence</p>
+                                    </div>
+                                </div>
+                                <!--图+文-->
+                                <div class="flex justify-between text-left">
+                                    <div class="flex w-full"><img class="w-full"  src="./images/TA/Ba2.png"></div>
+                                </div>
+                                <!--图+文-->
+                            </div><!--Background结束-->
+                            <!--分割线-->
+                            <div class="divide-y container my-8" id="Problem Define">
+                                <div><p class="invisible">&nbsp</p></div>
+                                <div><p class="invisible">&nbsp</p></div>
+                            </div><!--分割线结束-->
+                        </div><!--Father结束-->
+                    </div><!--col结束-->
+                </div><!--col结束-->
+            </div><!--row结束-->
+        </div><!--container结束-->
+    </section>
+
+
+    <!--正文2-->
+    <section class="bg-opdark px-52">
+        <div class="container px-12 mx-auto">
+            <div class="row pt-5">
+                <div class="col-md-10">
+                    <div class="col-12 px-3 py-4">
+                        <div class="row d-flex align-items-center">
+                            <!-- Problem Define 0316删掉my-20 新增id-->
+                            <div class="flex justify-center text-left">
+                                <div class="flex w-2/6">
+                                    <p class="text-2xl text-white pfsemibold"><br>📌Problem Define</p>
+                                </div>
+                                <div class="flex w-4/6">
+                                    <p class="leading-relaxed text-white">
+                                    <br><span class=" text-xl pfsemibold underline">
+                                        How to alleviate the time urgency issues faced by students in Chinese universities?
+                                    </span><br><br><br>
+                                   </p>
+                                </div>
+                            </div><!-- Problem Define结束-->
+                        </div><!--Father结束-->
+                    </div><!--col结束-->
+                </div><!--col结束-->
+            </div><!--row结束-->
+        </div><!--container结束-->
+    </section>
+
+
+    <!--正文3-->
+    <section class="px-52">
+        <div class="container px-12 mx-auto">
+            <div class="row pt-5">
+                <div class="col-md-10">
+                    <div class="col-12 px-3 py-4">
+                        <div class="row d-flex align-items-center">
+                            <!--分割线-->
+                            <div class="divide-y container my-4" id="Problem Modeling">
+                                <div><p class="invisible">&nbsp</p></div>
+                                <div><p class="invisible">&nbsp</p></div>
+                            </div><!--分割线结束-->
+                            <!--Problem Modeling-->
+                            <div class="bg-oplightpink">
+                                <div class="flex justify-between text-left my-12">
+                                    <div class="flex w-full">
+                                        <p>
+                                            <span class="text-2xl pfsemibold">📖Problem Modeling</span>
+                                            <span class="text-xl pfsemibold text-opmaingreen"><br>Comprehensive modeling</span>
+                                            <span class="text-lg pfregular leading-relaxed">
+                                                <br><br>
+                                                Considering the involvement of psychology and communication studies in the time urgency issue, 
+                                                I combined perspectives from these disciplines to model its formation mechanism. 
+                                                Ultimately, I concluded that design can intervene time urgency in two ways:
+                                                <br>· <span class="bg-oplightgreen">For the internal cognitive system:</span> Design can assist students in alleviating attentional biases.
+                                                <br>· <span class="bg-oplightgreen">For the perception of the external environment:</span> Design can alter the "linear" metaphors in existing devices like clocks and creat new timekeeping tools with a "cyclical" metaphor.
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--图+文-->
+                                <div class="flex justify-between text-left">
+                                    <div class="flex"><img class="w-full"  src="./images/TA/S1.png"></div>
+                                </div>
+                                <!--图+文-->
+                                <div class="flex justify-between text-left">
+                                    <div class="flex w-full">
+                                        <p>
+                                            <span class="text-xl pfsemibold text-opmaingreen"><br>Time urgency model from the cognitive perspective</span>
+                                            <span class="text-lg pfregular leading-relaxed">
+                                                <br>After understanding how design can aid in addressing time anxiety, I needed to identify the core factors of this issue.
+                                                Viewing time anxiety through a neural network model
+                                                <span class="text-oplightblue underline"><a href="https://en.wikipedia.org/wiki/Connectionism" 
+                                                class="text-oplightblue duration-500 ease-in-out hover:text-opgrey2">[1]</a></span>
+                                                , where time anxiety is the output and inputs vary widely, it became crucial to discern the key factors in the hidden layer.  
+                                                Thus, through literature research, I found Attention Control Theory to be most relevant
+                                                <span class="text-oplightblue underline">[
+                                                <a href="https://scholar.google.com/scholar?hl=zh-CN&as_sdt=0%2C5&q=Urgency+forces+stimulus-driven+action+by+overcoming+cognitive+control&btnG=" 
+                                                class="text-oplightblue duration-500 ease-in-out hover:text-opgrey2">2</a>,
+                                                <a href="https://scholar.google.com/scholar?hl=zh-CN&as_sdt=0%2C5&q=Anxiety%2C+processing+efficiency%2C+and+cognitive+performance%3A+New+developments+from+attentional+control+theory&btnG=" 
+                                                class="text-oplightblue duration-500 ease-in-out hover:text-opgrey2">3</a>,
+                                                <a href="https://scholar.google.com/scholar?hl=zh-CN&as_sdt=0%2C5&q=Attentional+control+theory+of+anxiety%3A+Recent+developments&btnG=" 
+                                                class="text-oplightblue duration-500 ease-in-out hover:text-opgrey2">4</a>,
+                                                <a href="https://scholar.google.com/scholar?hl=zh-CN&as_sdt=0%2C5&q=When+time+slows+down%3A+The+influence+of+threat+on+time+perception+in+anxiety&btnG=" 
+                                                class="text-oplightblue duration-500 ease-in-out hover:text-opgrey2">5</a>,
+                                                <a href="https://scholar.google.com/scholar?hl=zh-CN&as_sdt=0%2C5&q=Time+course+of+attentional+bias+to+emotional+scenes+in+anxiety%3A+Gaze+direction+and+duration&btnG=" 
+                                                class="text-oplightblue duration-500 ease-in-out hover:text-opgrey2">6</a> ]
+                                                </span>
+                                                . The cycle of [anxiety → imbalance in the attention system → biased attention towards difficulties → skewed resource allocation (reduced cognitive timer attention resources) → anxiety ] creates a systemic loop, with anxiety incrementally intensifying within this system. 
+                                                Then, I borrowed ideas from Cybernetics
+                                                <span class="text-oplightblue underline"><a href="https://en.wikipedia.org/wiki/Cybernetics" 
+                                                class="text-oplightblue duration-500 ease-in-out hover:text-opgrey2">[7]</a></span>
+                                                to model a solution for this system.
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--图+文-->
+                                <div class="flex justify-between text-left">
+                                    <div class="flex w-full"><img class="w-full"  src="./images/TA/S2.png"></div>
+                                </div>
+                                <!--图+文-->
+                            </div><!--Problem Modeling结束-->
+
+                            <!--分割线-->
+                            <div class="divide-y container my-8" id="Hypothetical Strategies">
+                                <div><p class="invisible">&nbsp</p></div>
+                                <div><p class="invisible">&nbsp</p></div>
+                            </div><!--分割线结束-->
+                            <!--Hypothetical Strategies-->
+                            <div class="bg-oplightpink">
+                                <div class="flex justify-between text-left my-4">
+                                    <div class="flex w-full">
+                                        <p><span class="text-2xl pfsemibold"><br>📑Hypothetical Strategies</span>
+                                            <span class="text-xl pfsemibold text-opmaingreen"><br>Strategic Framework</span>
+                                            <span class="text-lg pfregular leading-relaxed">
+                                                <br><br>After analyzing relevant theoretical literature and existing solutions, 
+                                                I developed a preliminary strategic framework layer by layer.
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--图+文-->
+                                <div class="flex justify-between text-left">
+                                    <div class="flex"><img class="w-full"  src="./images/TA/Hs.png"></div>
+                                </div>
+                                <!--图+文-->
+                                <div class="flex justify-between text-left">
+                                    <div class="flex w-full">
+                                        <p><span class="text-xl pfsemibold text-opmaingreen"><br>Folk Remedies</span>
+                                            <span class="text-lg pfregular leading-relaxed">
+                                                <br><br>I discovered that some users would use "time-slowing audio" to ease their sense of time urgency by researching their unconscious attempts to alleviate this issue. 
+                                                Therefore, the blocking strategy can be materialized into a music product.
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--图+文-->
+                                <div class="flex justify-between text-left">
+                                    <div class="flex w-full"><img class="w-full"  src="./images/TA/Hs2.png"></div>
+                                </div>
+                                <!--图+文-->
+                            </div><!--User Research结束-->
+
+                            <!--分割线-->
+                            <div class="divide-y container my-8" id="User Research">
+                                <div><p class="invisible">&nbsp</p></div>
+                                <div><p class="invisible">&nbsp</p></div>
+                            </div><!--分割线结束-->
+                            <!--User Research-->
+                            <div class="bg-oplightpink">
+                                <div class="flex justify-between text-left my-4">
+                                    <div class="flex w-full">
+                                        <p>
+                                            <span class="text-2xl pfsemibold"><br>📝User Research</span>
+                                            <span class="text-lg pfregular leading-relaxed">
+                                                <br><br>
+                                                Since the "Blocking" strategy targets External Distracting Stimuli (Threatening Information), and the "Regulation" and "Illusion" strategies target Internal Distracting Stimuli (Worrying Thoughts), 
+                                                understanding the stimuli encountered by users during the learning process is crucial to effectively implement these strategies in practice. 
+                                                Therefore, <span class="bg-oplightgreen">for external environmental stimuli, I employ observation methodology; for internal distracting stimuli, I use interview methodology</span>.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--图+文-->
+                                <div class="flex justify-between text-left">
+                                    <div class="flex"><img class="w-full"  src="./images/TA/Ur1.png"></div>
+                                </div>
+                                <!--图+文-->
+                                <div class="flex justify-between text-left">
+                                    <div class="flex w-full">
+                                        <p>
+                                            <div class="container" id="(1) Observation">
+                                                <span class="text-2xl pfsemibold"><br>🔍(1) Observation</span> 
+                                                <span class="text-lg pfregular">
+                                                    <br>After conducting a 3-hour observation in 3 different study rooms within Guangzhou University Town, 
+                                                    I compiled the results of these observations.
+                                                </span>
+                                            </div>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--图+文-->
+                                <div class="flex justify-between text-left">
+                                    <div class="flex w-full"><img class="w-full"  src="./images/TA/Ur2.png"></div>
+                                </div>
+                                <!--图+文-->
+                                <div class="flex justify-between text-left">
+                                    <div class="flex w-full">
+                                        <p>
+                                            <div class="container" id="(2) Interview">
+                                                <span class="text-2xl pfsemibold"><br>📞(2) Interview</span> 
+                                                <span class="text-lg pfregular">
+                                                    <br>To ensure the scientific validity of the interview results, I randomly selected 10 university students from the study rooms and invited them to fill out a 7-item time urgency scale. Based on the final scores of the scale, 4 students were chosen for semi-structured interviews.
+                                                </span>
+                                            </div>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--图+文-->
+                                <div class="flex justify-between text-left">
+                                    <div class="flex w-full"><img class="w-full"  src="./images/TA/Ur3.png"></div>
+                                </div>
+                                <div class="flex justify-between text-left">
+                                    <div class="flex w-full">
+                                        <p><span class="text-lg pfregular">
+                                                    <br>The research indicates that university students' worrying thoughts in study scenarios, stemming from internal distractions, are primarily caused by 3 factors. 
+                                                    <br><span class="bg-oplightgreen pfsemibold"> · Personal factors</span>: Mainly related to study habits and learning abilities. Study habits particularly refer to procrastination, while learning ability pertains to the difficulty level of content. Prolonged struggles with challenging tasks can lead to anxiety. 
+                                                    <br><span class="bg-oplightgreen pfsemibold">· Event factors</span>: Mainly related to task completion. Anxiety arises if a task is nearing its deadline without being completed, or if completed but without results. 
+                                                    <br><span class="bg-oplightgreen pfsemibold">· Real-life factors</span>：Mainly related to people and events. Interpersonal aspects mainly involve anxiety from comparisons with peers, while task-related factors pertain to unexpected events in life causing unease.
+                                                </span>
+                                            </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div><!--User Research结束-->
+                            <!--分割线-->
+                            <div class="divide-y container my-12" id="Final Strategies">
+                                <div><p class="invisible">&nbsp</p></div>
+                                <div><p class="invisible">&nbsp</p></div>
+                            </div><!--分割线结束-->
+                            <!--Problem Modeling-->
+                            <div class="bg-oplightpink">
+                                <div class="flex justify-between text-left my-12">
+                                    <div class="flex w-full">
+                                        <p><span class="text-2xl pfsemibold">🚩Final Strategies</span>
+                                            <span class="text-lg pfregular leading-relaxed">
+                                            <br><br>After conducting user research, I refined the design strategy and arrived at the product form.
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--图+文-->
+                            <div class="flex justify-between text-left my-16">
+                                <div class="flex"><img class="w-full"  src="./images/TA/Fs.png"></div>
+                            </div>
+                            <!--分割线-->
+                            <div class="divide-y container my-4" id="Tech Research">
+                                <div><p class="invisible">&nbsp</p></div>
+                                <div><p class="invisible">&nbsp</p></div>
+                            </div><!--分割线结束-->
+                            <!--Problem Modeling-->
+                            <div class="bg-oplightpink">
+                                <div class="flex justify-between text-left my-12">
+                                    <div class="flex w-full">
+                                        <p><span class="text-2xl pfsemibold">📡Tech Research</span>
+                                            <span class="text-lg pfregular leading-relaxed">
+                                            <br><br>After conducting user research, I refined the design strategy and arrived at the product form.
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--图+文-->
+                            <div class="flex justify-between text-left">
+                                <div class="flex"><img class="w-full"  src="./images/TA/TR.png"></div>
+                            </div>
+                            <!--分割线-->
+                            <div class="divide-y container my-4" id="Ideate & Prototype">
+                                <div><p class="invisible">&nbsp</p></div>
+                                <div><p class="invisible">&nbsp</p></div>
+                            </div><!--分割线结束-->
+                            <!--Problem Modeling-->
+                            <div class="bg-oplightpink">
+                                <div class="flex justify-between text-left my-12">
+                                    <div class="flex w-full">
+                                        <p><span class="text-2xl pfsemibold">🎨Ideate & Prototype</span>
+                                            <span class="text-lg pfregular leading-relaxed">
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--图+文-->
+                            <div class="flex justify-between text-left">
+                                <div class="flex"><img class="w-full"  src="./images/TA/IP.png"></div>
+                            </div>
+                            <!--分割线-->
+                            <div class="divide-y container my-4" id="Final Design">
+                                <div><p class="invisible">&nbsp</p></div>
+                                <div><p class="invisible">&nbsp</p></div>
+                            </div><!--分割线结束-->
+                            <!--Problem Modeling-->
+                            <div class="bg-oplightpink">
+                                <div class="flex justify-between text-left my-12">
+                                    <div class="flex w-full">
+                                        <p><span class="text-2xl pfsemibold">💾Final Design</span>
+                                            <span class="text-lg pfregular leading-relaxed">
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--图+文-->
+                            <div class="flex justify-between text-left">
+                                <div class="flex"><img class="w-full"  src="./images/TA/FD.png"></div>
+                            </div>
+
+                            <!--分割线-->
+                            <div class="divide-y divide-gray-400 container" id="Reflection">
+                                <div><p class="invisible">&nbsp</p></div>
+                                <div><p class="invisible">&nbsp</p></div>
+                            </div>
+
+                            <!--Reflection-->
+                <div class="flex justify-between text-left my-12">
+                    <div class="flex w-full">
+                        <p class="leading-relaxed">
+                        <span class="text-2xl pfsemibold">📋Reflection</span> 
+                        <span class="text-lg pfregular leading-relaxed">
+                            <br><br>This project is not my most comprehensive one, lacking steps like user testing, but it does reflect "who I am".
+                        </span>
+                        <span class="text-xl text-opmaingreen pfsemibold tracking-tight"><br><br>(1) Multi-Dimensional Thinking</span>
+                        <span class="text-lg pfregular leading-relaxed">
+                            <br>Whether in academic or commercial problems, there is no single method or perspective for problem-solving.
+                            What I do is integrating different perspectives to provide the most suitable solution strategy for the given context.
+                        </span>
+                        <span class="text-xl text-opmaingreen pfsemibold tracking-tight"><br><br>(2) Media Ecology and Metaphor</span>
+                        <span class="text-lg pfregular leading-relaxed">
+                            <br>Media Ecology helps me understand how a product's metaphor can alter human behavior. 
+                            Then, I can modify the product's metaphor through design, thereby changing human behavior. 
+                            Media Evolution, a derivative of Media Ecology, fundamentally views human needs as the environment for the natural selection of products. 
+                            <span class="text-lg bg-oplightgreen leading-relaxed">Human needs often have a constancy, the "media genes", with only the products carrying these needs evolving.</span>
+                            For example, in the pre-technological world, humans would listen to nature's sounds or a grandmother's stories before sleep at night. In the modern era, this need has evolved into voice social and podcast apps.
+                        </span>
+                        <br><br><br><br><br>
+                        </p>
+                    </div>                
+                </div>
+
+                            
+                        </div><!--Father结束-->
+                    </div><!--col结束-->
+                </div><!--col结束-->
+            </div><!--row结束-->
+        </div><!--container结束-->
+    </section>
+
+
+
+
+
+
+
+    <nav class="nav" Style="padding-left: 20px">
+        <div class="shadow-Slate-50 fixed pt-2 pb-2 pr-2 rlist flex flex-col w-auto bg-white divide-y divide-gray-200 backdrop-blur-md bg-white/30 text-left"
+            Style="padding-left: 10px;
+            top:50%;
+            transform:translateY(-47%)">
+            <div class="p-1 flex-auto pfregular text-base transition duration-500 ease-in-out hover:text-white hover:bg-black hover:underline ">
+                <a href="#Overview">Overview</a>
+            </div>
+            <div class="p-1 flex-auto pfregular text-base transition duration-500 ease-in-out hover:text-white hover:bg-black hover:underline ">
+                <a href="#Background">Background</a>
+            </div>
+            <div class="p-1 flex-auto pfregular text-base transition duration-500 ease-in-out hover:text-white hover:bg-black hover:underline ">
+                <a href="#Problem Define">Problem Define</a>
+            </div>
+            <div class="p-1 flex-auto pfregular text-base transition duration-500 ease-in-out hover:text-white hover:bg-black hover:underline ">
+                <a href="#Problem Modeling">Problem Modeling</a>
+            </div>
+            <div class="p-1 flex-auto pfregular text-base transition duration-500 ease-in-out hover:text-white hover:bg-black hover:underline ">
+                <a href="#Hypothetical Strategies">Hypothetical Strategies</a>
+            </div>
+            <div class="p-1 flex-auto pfregular text-base pfregular text-base transition duration-500 ease-in-out hover:text-white hover:bg-black hover:underline ">
+                <a href="#User Research">User Research</a>
+            </div>
+            <div class="p-1 flex-auto pfregular text-base transition duration-500 ease-in-out hover:text-white hover:bg-black hover:underline ">
+                <a href="#(1) Observation">&nbsp&nbsp (1) Observation</a>
+            </div>
+            <div class="p-1 flex-auto pfregular text-base transition duration-500 ease-in-out hover:text-white hover:bg-black hover:underline ">
+                <a href="#(2) Interview">&nbsp&nbsp (2) Interview</a>
+            </div>
+            <div class="p-1 flex-auto pfregular text-base transition duration-500 ease-in-out hover:text-white hover:bg-black hover:underline ">
+                <a href="#Final Strategies">Final Strategies</a>
+            </div>
+            <div class="p-1 flex-auto pfregular text-base transition duration-500 ease-in-out hover:text-white hover:bg-black hover:underline ">
+                <a href="#Tech Research">Tech Research</a>
+            </div>
+            <div class="p-1 flex-auto pfregular text-base transition duration-500 ease-in-out hover:text-white hover:bg-black hover:underline ">
+                <a href="#Ideate & Prototype">Ideate & Prototype</a>
+            </div>
+            <div class="p-1 flex-auto pfregular text-base transition duration-500 ease-in-out hover:text-white hover:bg-black hover:underline ">
+                <a href="#Final Design">Final Design</a>
+            </div>
+            <div class="p-1 flex-auto pfregular text-base transition duration-500 ease-in-out hover:text-white hover:bg-black hover:underline ">
+                <a href="#Reflection">Reflection</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--footer-->
+    <footer class="body-font bg-opdark py-5 px-28" id="footer">
+        <div class="container px-28 py-8 flex flex-col">
+            <span class="text-3xl pfsemibold text-white sm:ml-4 sm:py-2 sm:mt-0 mt-4">
+                <span class="duration-500 ease-in-out leading-relaxed hover:text-opgrey4">
+                    <a href="ZlyLouisa@outlook.com">Let's chat!☕</a>
+                </span><br>View more 
+                <span class="duration-500 ease-in-out text-opred2 leading-relaxed hover:text-white">
+                    <a href="./index.html">works</a></span>✨
+            </span><br>
+            <span class="inline-flex sm:flex-row justify-center sm:justify-start">
+                <a class="footer-logo flex title-font font-medium items-center md:justify-start justify-center text-gray-800"
+                    href="./index.html">
+                <span class="ml-3 text-xl text-white duration-500 ease-in-out leading-relaxed hover:text-opgrey4">Louisa Zhang
+                </span></a>
+                <p class="text-sm text-gray-200 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+                    ©2023 Made with caffeine —
+                    <a href="mailto: ZlyLouisa@outlook.com" class="text-gray-200 ml-1 duration-500 ease-in-out leading-relaxed hover:text-opgrey4" rel="noopener noreferrer"
+                    target="_blank">ZlyLouisa@outlook.com</a>
+                </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 px-8 justify-center sm:justify-start">
+                <ul class="flex items-center">
+                    <a class="ml-5 text-white" href="https://github.com/uxrishu" target="_blank">
+                        <span class=" text-xl"><i class="fa-brands fa-github"></i></span>
+                    </a>
+                    <a class="ml-5 text-white" href="https://www.linkedin.com/in/uxrishu/" target="_blank">
+                        <span class="text-xl"><i class="fa-brands fa-linkedin-in"></i> </span>
+                    </a>
+                </ul>
+            </span>
+        </div>
+    </footer>
+
+        <!--目录-->
+        <script>
+            $(document).ready(function () {
+                var w1 = $('.nav').width()
+                $('#js-width').css({ 'width': screen.width, 'margin-left': -280 });
+                $('#js-width1').css({ 'width': screen.width, 'margin-left': -280 });
+                $('#js-width2').css({ 'width': screen.width, 'margin-left': -280 });
+                var $sections = $('.container'); //选取容器
+                var inScreen = 100; //进入屏幕100px后高亮
+                var outScreen = 100; //距离滚出屏幕还有200px时取消高亮
+                function scrollactive() {
+                    $sections.each(function (idx, $sec) {
+                        // console.log($sec)
+                        var $sec = $($sec);
+                        var wHeight = $(window).height(); //获取窗口的高度
+                        var sHeight = $sec.height(); //获取元素的高度
+                        var wScroll = $(window).scrollTop(); //获取窗口距离网页顶部的高度
+                        var sScroll = $sec.offset().top; //获取元素距离顶部的高度
+                        var wTop = wScroll + wHeight - inScreen; //窗口底部距离网页顶端的高度
+                        var sTop = sScroll + sHeight - outScreen; //元素底部距离网页顶端的高度
+                        //给当前所有在浏览器窗口内显示的菜单及其容器添加高亮样式
+                        //只高亮一个菜单
+                        var w;
+                        if (sHeight < wHeight) {
+                            w = wHeight - sHeight; //屏幕与元素间的高度差
+                        } else {
+                            w = 1; //防止滚动条默认偏移
+                        };
+                        if (sScroll - w < wScroll) {  //判断元素顶部是否在窗口中
+                            var idn = $sec.attr('id');
+                            $('.nav .p-1').removeClass('active');
+                            $('.nav a[href=' + '"#' + idn + '"]').parent().addClass('active');
+                        };
+                    });
+                };
+                scrollactive();
+                //滚动浏览器触发事件
+                $(window).scroll(function () {
+                    scrollactive();
+                });
+                //锚点平滑滚动
+                $('.nav a').click(function () {
+                    $('html, body').animate({
+                        scrollTop: ($($(this).attr('href')).offset().top - 30) + 'px'
+                    }, {
+                        duration: 400,
+                        easing: 'swing'
+                    });
+                    return false;
+                });
+            });
+        </script>
+
+</body>
+</html>
