@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="cn" class="scroll-smooth font-sans">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Byme</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="font.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<!-- CSS -->
+<link rel="icon" type="image/x-icon" href="./media/icons/logo031611.svg">
+<link rel="stylesheet" href="./style/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@400;600&display=swap" rel="stylesheet">
+
+<body class="min-w-[1700px]">
+  <!--进度条 -->
+  <div id="progress-container"
+    style="position: fixed; top: 0; left: 0; width: 100%; height: 5px; background-color: #F5F7FA; z-index: 9999; display: none;">
+    <div id="progress-bar" style="height: 100%; width: 0; background-color: #7c7c7c;"></div>
+  </div>
+
+  <!-- Navbar -->
+  <div>
+    <nav class="flex justify-between w-full px-16 py-10 z-30 bg-[#F5F7FA] animate__animated animate__fadeInDown">
+      <div class="flex justify-normal w-1/3 space-x-8">
+        <a href="index.html"
+          class="flex justify-center w-[144px] h-16 justify-normal text-xl rounded-full border border-black/20 text-black hover:bg-black hover:text-white hover:border-0 transition-all duration-300 ease-in-out"><button>✏️
+            WORKS</button></a>
+        <a href="https://www.figma.com/proto/BOqCrQRF74hnkCpTMDyufq/%E4%BD%9C%E5%93%81%E9%9B%86_HCI%E5%AD%A6%E6%9C%AF%E7%89%88?node-id=20-2837&t=abyVySw9ORx68tsa-1"
+          target="_blank"
+          class="flex justify-center w-[178px] h-16 justify-normal text-xl rounded-full border border-black/20 text-black hover:bg-black hover:text-white hover:border-0 transition-all duration-300 ease-in-out"><button>🖼
+            GALLERY</button></a>
+      </div>
+      <div class="flex justify-end w-1/3">
+        <a href="xx.html" target="_blank"
+          class="flex justify-center w-[178px] h-16 justify-normal text-xl rounded-full border border-black/20 text-black hover:bg-black hover:text-white hover:border-0 transition-all duration-300 ease-in-out"><button>👀
+            About Me</button></a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Cover -->
+  <div class="bg-white h-[270px] flex justify-between items-center mx-[96px]">
+    <div class="animate__animated animate__fadeInLeft">
+      <img src="https://louisazz.oss-cn-beijing.aliyuncs.com/media/byme_logo.png">
+    </div>
+    <div>
+      <p class="text-[40px] PF-sm animate__animated animate__fadeInRight">重新设计视频速配，以创造陌生社交新体验，<br>并在此过程中平衡商业化与用户体验。
+      </p>
+    </div>
+  </div>
+  <!-- Overview -->
+  <div class="flex bg-white h-[250px] justify-between px-[96px] animate__animated animate__fadeIn">
+    <div>
+      <p class="text-[32px] PF-sm">Role</p>
+      <p class="pt-[24px] text-[24px] PF-r text-black/60">UX/UI Design<br>
+        User Experience Measurement<br>
+        User Research</p>
+    </div>
+    <div>
+      <p class="text-[32px] PF-sm">Overview</p>
+      <p class="pt-[24px] text-[24px] PF-r text-black/60">Client: Maiyue<br>
+        Tools: Sketch, Figma, Blender...<br>
+        Timeline: 2023.10 - 2024.03</p>
+    </div>
+    <div>
+      <p class="text-[32px] PF-sm">Keywords</p>
+      <p class="pt-[24px] text-[24px] PF-r text-black/60">GSM<br>
+        3D Visual Design<br>
+        Problem Solving</p>
+    </div>
+  </div>
+  <div>
+    <img src="https://louisazz.oss-cn-beijing.aliyuncs.com/media/byme_video/byme_video_cover.png">
+  </div>
+
+  <!--preface-->
+  <div class="px-[96px] pt-[176px] pb-[88px]">
+    <p class="text-black/50 PF-sm text-[32px] mb-[24px]">Preface</p>
+    <p class="text-black/80 PF-m text-[48px] mb-[56px]">
+      Byme是一款以音视频玩法为主的泛娱乐社交产品，主要面向海外（尤其是港澳台和东南亚）市场，其核心营收玩法包括视频/语音速配、付费IM、语音聊天室等。我参与了从0到1的项目落地过程，并负责了超过50%功能的交互设计。
+    </p>
+    <p class="text-black/50 PF-m text-[20px]">如果您的时间紧迫，希望浏览总体成果，而不是阅读完整的案例研究，<a
+        class="text-black PF-m text-[20px] hover:underline bg-[#7FFFFF]"
+        href="#finaldesign">可以点此前往页面底部，直接浏览Byme的主要设计成果。</a></p>
+  </div>
+  <!--background-->
+  <div class="px-[96px] pt-[176px] pb-[88px]">
+    <p class="text-black/50 PF-sm text-[32px] mb-[24px]">Background</p>
+    <p class="text-black/80 PF-m text-[48px] mb-[56px]">
+      首先，让我们了解该案例研究的背景：产运团队指出，视频匹配功能上线7日后，10s等待放弃率高达32%，匹配流程完成率低于50%，营收效果远低于预期，体验侧需要介入诊断和优化。
+    </p>
+    <p class="text-black/50 PF-m text-[20px]">10s等待放弃率：等待10秒后主动放弃的用户数/启动匹配流程的总用户数*100%（一日内）
+      <br>匹配流程完成率：成功匹配并接通的用户数/启动匹配流程的总用户数*100%（一日内）
+    </p>
+  </div>
+  <img src="https://louisazz.oss-cn-beijing.aliyuncs.com/media/byme_video/byme_video_content_1.png">
+  <!--Research Plan-->
+  <div class="px-[96px] pt-[176px] pb-[88px]">
+    <p class="text-black/50 PF-sm text-[32px] mb-[24px]">Research Plan</p>
+    <p class="text-black/80 PF-m text-[48px]">
+      了解需求背景后，我们制定了一个为期5天的计划，包括用户研究（3天）及方案产出（2天）。下图展示了详细的研究框架，包括问卷法、访谈法、数据分析和体验指标制定等。
+    </p>
+  </div>
+  <img src="https://louisazz.oss-cn-beijing.aliyuncs.com/media/byme_video/byme_video_content_2.png">
+  <!--Questionnaire-->
+  <div class="px-[96px] pt-[176px] pb-[88px]">
+    <p class="text-black/50 PF-sm text-[32px] mb-[24px]">Questionnaire</p>
+    <p class="text-black/80 PF-m text-[48px] mb-[56px]">
+      出于效率考虑，团队先在内部进行了定性归因，再将可能影响数据的因素筛选整理成问卷，发放给目标用户进行验证。其结论是，😵等待焦虑感、🎁价值感知不足是导致用户放弃匹配的直接原因，也是体验设计的可干预因素。
+    </p>
+    <p class="text-black/50 PF-m text-[20px] w-2/3">
+      起初根据数据结果，我们认为耗时长是核心痛点。但与PM沟通后发现，由于平台处于初期，主播数量不足，因此匹配时间长的问题无法避免。如果强行缩短，用户可能匹配到劣质对象，影响留存。权衡后，我们决定将“算法效率”这一不可控项，转化为“感知效率”这一可控设计命题。
+    </p>
+  </div>
+  <img src="https://louisazz.oss-cn-beijing.aliyuncs.com/media/byme_video/byme_video_content_3.png">
+  <!--Interview-->
+  <div class="px-[96px] pt-[176px] pb-[88px]">
+    <p class="text-black/50 PF-sm text-[32px] mb-[24px]">Interview</p>
+    <p class="text-black/80 PF-m text-[48px]">
+      为深入挖掘问卷中“等待焦虑”与“价值感知不足”的成因，我们通过访谈聚焦用户主观决策心理与场景细节，发现三大隐性矛盾：系统反馈的信任危机<a
+        class="text-black/20">（如虚假“进度条”反而可能加剧质疑）</a>，分层价值认知差异<a class="text-black/20">（高低频用户对功能的认知不一致）</a>，交互灵活度缺失<a
+        class="text-black/20">（等待期间无互动、无法后台挂起）。</a>
+    </p>
+  </div>
+  <img src="https://louisazz.oss-cn-beijing.aliyuncs.com/media/byme_video/byme_video_content_4.png">
+  <!--1st Design Iteration-->
+  <div class="px-[96px] pt-[176px] pb-[88px]" id="finaldesign">
+    <p class="text-black/50 PF-sm text-[32px] mb-[24px]">1st Design Iteration</p>
+    <p class="text-black/80 PF-m text-[48px]">
+      在与产品、技术团队一起进行头脑风暴后，我们形成了初版的解决方案。接下来，您将首先了解该方案的UX/UI设计如何回应前述的三项挑战，之后可查看实际动效演示。
+    </p>
+  </div>
+  <img src="https://louisazz.oss-cn-beijing.aliyuncs.com/media/byme_video/byme_video_content_6.png">
+  <video class="w-full h-auto" autoplay loop muted playsinline style="mix-blend-mode: darken;">
+    <source src="https://louisazz.oss-cn-beijing.aliyuncs.com/media/byme_video/byme_video_pro.webm">
+  </video>
+  <!--2nd Design Iteration-->
+  <div class="px-[96px] pt-[176px] pb-[88px]">
+    <p class="text-black/50 PF-sm text-[32px] mb-[24px]">Game</p>
+    <p class="text-black/80 PF-m text-[48px]">
+      经过评审，我们将第二次迭代的重心设置为流程、状态的补全和UI细节的调整。例如，我们优化了匹配取消页、视频通话页、视频结束页的UI设计，以使整体的视觉风格更一致、精致。
+    </p>
+  </div>
+  <img src="https://louisazz.oss-cn-beijing.aliyuncs.com/media/byme_video/byme_video_content_7.png">
+  <!--User Experience Metrics-->
+  <div class="px-[96px] pt-[176px] pb-[88px]">
+    <p class="text-black/50 PF-sm text-[32px] mb-[24px]">Game</p>
+    <p class="text-black/80 PF-m text-[48px]">
+      最后，我们根据Google GSM模型，制定了相应的体验指标，并与产品、开发合作设置埋点，用于验证设计效果。下面是具体的执行过程，包括最终的数据效果。
+    </p>
+  </div>
+  <img src="https://louisazz.oss-cn-beijing.aliyuncs.com/media/byme_video/byme_video_content_8.png">
+  <!--Future Design Iteration-->
+  <div class="px-[96px] pt-[176px] pb-[88px]">
+    <p class="text-black/50 PF-sm text-[32px] mb-[24px]">Game</p>
+    <p class="text-black/80 PF-m text-[48px]">
+      功能优化上线后，视频匹配Ⅱ期取得了如期的数据增长。在未来，考虑到玩法的分散度和复杂度，Ⅲ期可能将视频与语音匹配玩法进行深度整合。如果您感兴趣，请订阅本网站以查看实时更新。<a
+        class="underline">此外，如果您希望浏览更多关于Byme的设计工作，可以点击展开下面的卡片，以查看设计速览。</a>
+    </p>
+  </div>
+
+  <!-- 先看亮点 -->
+  <div class="bg-[#F5F7FA] px-[96px] pt-[88px]">
+    <div class="flex">
+      <div data-image="https://louisazz.oss-cn-beijing.aliyuncs.com/media/Byme/01_2.png"
+        class="openModal mr-[24px] mb-[24px] hover:cursor-pointer transition-all duration-500 ease-in-out transform hover:scale-[1.01] hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.1)]">
+        <img src="https://louisazz.oss-cn-beijing.aliyuncs.com/media/Byme/card_01.png">
+      </div>
+      <div data-image="https://louisazz.oss-cn-beijing.aliyuncs.com/media/Byme/03.png"
+        class="openModal mb-[24px] hover:cursor-pointer transition-all duration-500 ease-in-out transform hover:scale-[1.01] hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.1)]">
+        <img src="https://louisazz.oss-cn-beijing.aliyuncs.com/media/Byme/card_03.png">
+      </div>
+      <div data-image="https://louisazz.oss-cn-beijing.aliyuncs.com/media/Byme/04_2.png"
+        class="openModal ml-[24px] mb-[24px] hover:cursor-pointer transition-all duration-500 ease-in-out transform hover:scale-[1.01] hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.1)]">
+        <img src="https://louisazz.oss-cn-beijing.aliyuncs.com/media/Byme/card_04.png">
+      </div>
+    </div>
+
+    <div class="flex">
+      <div data-image="mhttps://louisazz.oss-cn-beijing.aliyuncs.com/media/Byme/06.png"
+        class="openModal mr-[24px] mb-[24px] hover:cursor-pointer transition-all duration-500 ease-in-out transform hover:scale-[1.01] hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.1)]">
+        <img src="https://louisazz.oss-cn-beijing.aliyuncs.com/media/Byme/cardB_01.png">
+      </div>
+      <div data-image="https://louisazz.oss-cn-beijing.aliyuncs.com/media/Byme/05.png"
+        class="openModal mr-[24px] mb-[24px] hover:cursor-pointer transition-all duration-500 ease-in-out transform hover:scale-[1.01] hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.1)]">
+        <img src="media/Byme/card_05.png">
+      </div>
+      <div data-image="mhttps://louisazz.oss-cn-beijing.aliyuncs.com/media/Byme/11.png"
+        class="openModal mb-[24px] hover:cursor-pointer transition-all duration-500 ease-in-out transform hover:scale-[1.01] hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.1)]">
+        <img src="https://louisazz.oss-cn-beijing.aliyuncs.com/media/Byme/card_06.png">
+      </div>
+    </div>
+  </div>
+
+  <div class=" bg-[#F5F7FA] px-[96px]">
+    <div class="flex">
+      <div data-image="https://louisazz.oss-cn-beijing.aliyuncs.com/media/Byme/07.png"
+        class="openModal mr-[24px] mb-[24px] hover:cursor-pointer transition-all duration-500 ease-in-out transform hover:scale-[1.01] hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.1)]">
+        <img src="https://louisazz.oss-cn-beijing.aliyuncs.com/media/Byme/cardB_02.png">
+      </div>
+      <div data-image="https://louisazz.oss-cn-beijing.aliyuncs.com/media/Byme/08.png"
+        class="openModal mb-[24px] hover:cursor-pointer transition-all duration-500 ease-in-out transform hover:scale-[1.01] hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.1)]">
+        <img src="https://louisazz.oss-cn-beijing.aliyuncs.com/media/Byme/cardB_03.png">
+      </div>
+      <div data-image="https://louisazz.oss-cn-beijing.aliyuncs.com/media/yme/10_change.png"
+        class="openModal ml-[24px] mb-[96px] hover:cursor-pointer transition-all duration-500 ease-in-out transform hover:scale-[1.01] hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.1)]">
+        <img src="https://louisazz.oss-cn-beijing.aliyuncs.com/media/Byme/cardB_05.png">
+      </div>
+    </div>
+  </div>
+
+  <!-- 弹窗 -->
+  <div id="imageModal" class="modal animate__fadeIn animate__animated">
+    <button id="closeModal" class="close-button"></button>
+    <img id="modalImage" src="" alt="长图">
+  </div>
+
+  <script>
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    const closeModalButton = document.getElementById('closeModal');
+    const progressContainer = document.getElementById('progress-container');
+    const progressBar = document.getElementById('progress-bar');
+
+    // 通用打开模态框函数
+    function openModal(imageSrc) {
+      modalImage.src = imageSrc;
+      modal.classList.add('active');
+    }
+
+    // 为每个按钮添加点击事件
+    document.querySelectorAll('.openModal').forEach(button => {
+      button.addEventListener('click', () => {
+        const imageSrc = button.getAttribute('data-image'); // 获取对应图片的 URL
+        openModal(imageSrc); // 打开模态框并展示图片
+      });
+    });
+
+    // 点击关闭按钮和模态框外部关闭模态框
+    closeModalButton.addEventListener('click', () => {
+      modal.classList.remove('active');
+    });
+
+    modal.addEventListener('click', (event) => {
+      if (event.target === modal) {
+        modal.classList.remove('active');
+      }
+    });
+
+    // 预加载图片并更新整体加载进度
+    function preloadImages() {
+      const externalImages = document.querySelectorAll('img'); // 所有 img 标签
+      const imagesToLoad = [...externalImages].filter(img => img.src !== ''); // 过滤掉没有 src 的 img
+      const totalImages = imagesToLoad.length;
+      let loadedImages = 0;
+
+      progressContainer.style.display = 'block'; // 显示进度条
+
+      // 定义一个函数来更新进度
+      const updateProgress = () => {
+        loadedImages++;
+        const progressPercentage = (loadedImages / totalImages) * 100;
+        progressBar.style.width = progressPercentage + '%';
+
+        // 如果所有图片都加载完成，隐藏进度条
+        if (loadedImages === totalImages) {
+          setTimeout(() => {
+            progressContainer.style.display = 'none'; // 隐藏进度条
+          }, 500); // 延迟500ms再隐藏，以便用户看到完成的状态
+        }
+      };
+
+      // 加载外部图片
+      imagesToLoad.forEach(img => {
+        // 当图片加载成功后
+        img.onload = updateProgress;
+        img.src = img.src; // 触发浏览器去加载图片
+      });
+
+      // 加载模态框内部的图片
+      const modalImages = document.querySelectorAll('.openModal');
+      modalImages.forEach(img => {
+        const imageUrl = img.getAttribute('data-image');
+        const imgElement = new Image();
+
+        // 当图片加载成功后
+        imgElement.onload = updateProgress;  // 通过相同的方式更新进度
+        imgElement.src = imageUrl; // 预加载模态框的图片
+      });
+    }
+
+    // 页面加载时调用预加载功能
+    window.onload = preloadImages;
+  </script>
+
+  <!-- Ending -->
+  <div class="bg-[#F5F7FA] text-[24px] PF-sm">
+    <div class="flex justify-center p-[40px] text-[#808080]">
+      <p>🎉感谢您看到这里！</p>
+      <a href="qume.html" target="_blank" class="text-[#1C8AFF] hover:underline ">点此浏览下一个项目：Qume。</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div>
+    <footer class="bg-[#F5F7FA] text-[20px]">
+      <div class="flex justify-between p-[40px] text-black/60">
+        <p>© 2024 Louisa. </p>
+        <a href="mailto:chengkezha@gmail.com"
+          class="hover:underline hover:text-black transition-all duration-300 ease-in-out">
+          luoyiz2237@gmail.cm
+        </a>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>
